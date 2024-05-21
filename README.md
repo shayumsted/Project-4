@@ -1,2 +1,1 @@
-# Project 3
- electric car coding
+The following project tests our skills in object-oriented programming by initializing a new code focused on Electric Car charging. The code tests the speed a Tesla with a specific starting speed and battery charge amount. A test is then conducted to test the speed of the Tesla after accelerating, braking, and a charging session.
