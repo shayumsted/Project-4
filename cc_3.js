@@ -22,8 +22,19 @@ EV.prototype.chargeBattery = function(chargeTo) {this.charge = chargeTo;
 
 // Overriding the accelerating method into EV class
 EV.prototype.accelerate = function() {
-    super.accelerate(20); // Increases speed by 20 km/h
+    this.speed += 20; // Increases speed by 20 km/h
     this.charge -= 1; // Decreases battery charge by 1%
     console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%.`);}
 
-//
+// Test Data
+const tesla = new EV('Tesla', 120, 23);
+
+console.log(`Initial speed - ${tesla.make}: speed ${tesla.speed} km/h, charge ${tesla.charge}%`);
+
+console.log("\nTesting EV Acceleration and Charge:");
+tesla.accelerate();
+tesla.accelerate();
+tesla.chargeBattery(50);
+
+console.log("\nTesting Braking:");
+tesla.brake(10);
