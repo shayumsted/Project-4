@@ -11,7 +11,7 @@ Car.prototype.accelerate = function(value) {
 // Car's braking speed with a given value
 Car.prototype.brake = function(value) {
     this.speed -= value;
-    console.log(this.make +'slowed down to'+ this.speed +' km/h.');}
+    console.log(this.make +'slowed down to' + this.speed + ' km/h.');}
 
 // Car Class updated to include an EV Class
 class EV extends Car {constructor(make, speed, charge) {super(make, speed); this.charge = charge;}}
