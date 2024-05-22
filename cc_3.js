@@ -32,9 +32,9 @@ const tesla = new EV('Tesla', 120, 23);
 console.log(`Initial speed - ${tesla.make}: speed ${tesla.speed} km/h, charge ${tesla.charge}%`);
 
 console.log("\nTesting EV Acceleration and Charge:");
-tesla.accelerate();
-tesla.accelerate();
-tesla.chargeBattery(50);
+tesla.accelerate(); // Tesla going at 140 km/h, with a charge of 22%.
+tesla.accelerate(); // Tesla going at 160 km/h, with a charge of 21%.
+tesla.chargeBattery(50); // Tesla battery charged to 50%.
 
 console.log("\nTesting Braking:");
-tesla.brake(10);
+tesla.brake(10); // Tesla slowed down to 150 km/h.
